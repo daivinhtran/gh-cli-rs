@@ -16,9 +16,6 @@ pub enum GhError {
     #[error("Command failed with exit code {code}: {stderr}")]
     CommandFailed { code: i32, stderr: String },
 
-    #[error("Failed to parse JSON output: {0}")]
-    JsonParseError(#[from] serde_json::Error),
-
     #[error("IO error: {0}")]
     IoError(#[from] std::io::Error),
 

@@ -9,6 +9,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .create()
         .title("test PR created by gh_cli_rs")
         .body("This PR adds a new feature\n\n## Changes\n- Added feature X\n- Fixed bug Y")
+        // the branches must exist in remote repo for the command to work
         .base("main")
         .head("feature-branch")
         .draft()
