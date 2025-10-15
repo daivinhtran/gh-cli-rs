@@ -2,16 +2,11 @@
 
 🦀 A Rust wrapper for the GitHub CLI with a type-safe, fluent API. Built with [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern), [Fluent Interface](https://en.wikipedia.org/wiki/Fluent_interface), and [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern).
 
+The library is ideal for building [gh extensions](https://github.com/topics/gh-extension) and automating GitHub workflows in Rust.
+
 There are tons of commands in https://cli.github.com/manual/gh not implemented yet. PRs welcome!
 
 I plan to add support for all the core commands in the near future.
-
-## Use Cases
-
-- Build [gh extensions](https://github.com/topics/gh-extension) in Rust
-- Automate GitHub workflows (CI/CD, release management)
-- CLI tools with GitHub integration
-- Scripts for repo/PR/issue management
 
 ## Requirements
 
