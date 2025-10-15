@@ -1,7 +1,6 @@
 use crate::command::{BaseCommand, CommandBuilder, GhCommand};
 use crate::error::Result;
 use crate::executor::GhExecutor;
-use serde::{Deserialize, Serialize};
 use std::sync::Arc;
 
 /// Issue commands namespace
@@ -39,25 +38,6 @@ impl IssueCommands {
     pub fn reopen(&self, number: u32) -> IssueReopenCommand {
         IssueReopenCommand::new(self.executor.clone(), number)
     }
-}
-
-/// Issue information
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Issue {
-    pub number: u32,
-    pub title: String,
-    pub state: String,
-    pub url: String,
-    #[serde(rename = "createdAt")]
-    pub created_at: String,
-    #[serde(rename = "updatedAt")]
-    pub updated_at: String,
-    pub author: Author,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Author {
-    pub login: String,
 }
 
 /// Command for creating an issue

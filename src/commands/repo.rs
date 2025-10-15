@@ -1,7 +1,6 @@
 use crate::command::{BaseCommand, CommandBuilder, GhCommand};
 use crate::error::Result;
 use crate::executor::GhExecutor;
-use serde::{Deserialize, Serialize};
 use std::sync::Arc;
 
 /// Repository commands namespace
@@ -159,24 +158,6 @@ impl GhCommand for RepoForkCommand {
     fn build_args(&self) -> Vec<String> {
         self.cmd.build_args()
     }
-}
-
-/// Repository information
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Repository {
-    pub name: String,
-    #[serde(rename = "nameWithOwner")]
-    pub name_with_owner: String,
-    pub description: Option<String>,
-    pub url: String,
-    #[serde(rename = "isPrivate")]
-    pub is_private: bool,
-    #[serde(rename = "isFork")]
-    pub is_fork: bool,
-    #[serde(rename = "createdAt")]
-    pub created_at: String,
-    #[serde(rename = "updatedAt")]
-    pub updated_at: String,
 }
 
 /// Command for listing repositories
