@@ -10,7 +10,7 @@ I plan to add support for all the core commands in the near future.
 
 - Build [gh extensions](https://github.com/topics/gh-extension) in Rust
 - Automate GitHub workflows (CI/CD, release management)
-- CLI tools that integrate with GitHub
+- CLI tools with GitHub integration
 - Scripts for repo/PR/issue management
 
 ## Requirements
