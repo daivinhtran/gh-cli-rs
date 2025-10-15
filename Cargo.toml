@@ -10,7 +10,7 @@ repository = "https://github.com/daivinhtran/gh-cli-rs"
 homepage = "https://github.com/daivinhtran/gh-cli-rs"
 documentation = "https://docs.rs/gh-cli-rs"
 readme = "README.md"
-keywords = ["github", "cli", "gh", "git", "wrapper", "sdk"]
+keywords = ["github", "cli", "gh", "wrapper", "sdk"]
 categories = ["command-line-utilities", "api-bindings", "development-tools"]
 
 [dependencies]
