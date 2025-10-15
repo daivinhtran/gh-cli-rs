@@ -1,3 +1,5 @@
+[![Crates.io](https://img.shields.io/crates/v/gh-cli-rs.svg)](https://crates.io/crates/gh-cli-rs)
+
 # gh-cli-rs
 
 🦀 A Rust wrapper for the GitHub CLI with a type-safe, fluent API. Built with [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern), [Fluent Interface](https://en.wikipedia.org/wiki/Fluent_interface), and [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern).
